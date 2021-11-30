@@ -9,12 +9,12 @@ import (
 	"strings"
 )
 
-func main()  {
+func main() {
 	// Flag defines the command line arguments
 	// Use "go run . -help" to see the default values and usage information
 	// Use "go run . -planet Mars" to see the result with given parameters
 	path := flag.String("path", "myapp.log", "The path to log that should be analyzed")
-	level := flag.String("planet" , "Earth" , "The planet name that will be searched for")
+	level := flag.String("planet", "Earth", "The planet name that will be searched for")
 
 	// parse the command line arguments if they are provided; if none, use the default values
 	flag.Parse()
